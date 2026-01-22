@@ -1,0 +1,46 @@
+# --------------------
+# Secrets / env
+# --------------------
+.env
+.env.*
+
+# --------------------
+# Virtual environments
+# --------------------
+venv/
+venv_evidence/
+.venv/
+
+# --------------------
+# Data (raw / large)
+# --------------------
+data/raw_pdfs_acl/
+data/raw_bibs_acl/
+data/raw_pdfs_acl_test/
+*.pdf
+*.bib
+
+# --------------------
+# Outputs / runs
+# --------------------
+outputs/
+runs/
+*_intermediate/
+*.csv
+*.json
+
+# --------------------
+# Deprecated / scratch
+# --------------------
+data_prep/_deprecated/
+
+# --------------------
+# Python cache
+# --------------------
+__pycache__/
+*.pyc
+
+# --------------------
+# OS
+# --------------------
+.DS_Store

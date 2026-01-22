@@ -1,0 +1,13 @@
+pymupdf
+pandas
+openai
+tqdm
+python-dotenv
+requests
+beautifulsoup4
+tqdm
+transformers
+torch
+pandas
+huggingface_hub
+nltk

@@ -1,0 +1,20 @@
+# Core
+python>=3.10,<3.13
+numpy<2
+
+# Data & utilities
+pandas
+tqdm
+
+# PDF processing
+pymupdf
+
+# NLP
+nltk
+
+# Dense retrieval / embeddings
+torch>=2.2,<2.4
+transformers>=4.36
+sentencepiece
+safetensors
+accelerate
