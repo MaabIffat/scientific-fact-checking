@@ -13,49 +13,28 @@ The code is intended for research use in automated fact-checking and scientific 
 ## Repository Structure
 
 scientific-fact-checking/
-│
-├── data/
-│   ├── raw_pdfs_acl/
-│   │   └── <year>_acl/
-│   │       └── *.pdf
-│   └── processed/
-│
-├── data_prep/
-│   ├── parse_bibs_to_metadata_csv.py
-│   ├── merge_metadata_and_claims.py
-│   └── README.md
-│
 ├── claim_extraction/
 │   ├── extract_claims_gpt.py
-│   └── README.md
-│
+│   └── prompts.py
+├── data_prep/
+│   ├── download_acl_pdfs.py
+│   ├── download_acl_bibs.py
+│   ├── parse_bibs_to_metadata_csv.py
+│   └── merge_metadata_and_claims.py
 ├── evidence_collection/
-│   ├── collect_evidence_contriever.py
-│   └── README.md
-│
+│   └── collect_evidence_contriever.py
 ├── evaluation/
 │   ├── run_llama_inference.py
-│   ├── run_qwen_inference.py
-│   └── README.md
-│
+│   └── run_hf_inference_unified.py
 ├── decontextualization_claims/
-│   ├── run_decontextualization.py
-│   ├── prompt_task1_decontextualization.txt
-│   ├── prompt_task2_ambiguity.txt
-│   └── kshot_examples.txt
-│
-├── outputs/
-│   ├── claims_*.csv
-│   ├── final_*_claims.csv
-│   ├── *_with_evidence.csv
-│   └── model_runs/
-│       ├── llama_*/
-│       └── qwen_*/
-│
+│   ├── prompts.py
+│   └── run_decontextualization.py
 ├── scripts/
-│   └── utility_scripts.py
-│
+│   └── list_files.py
+├── data/                 # local only (ignored)
+├── outputs/              # local only (ignored)
 ├── requirements.txt
+├── requirements_evidence.txt
 ├── README.md
 └── LICENSE
 
